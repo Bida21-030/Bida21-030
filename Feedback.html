@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Feedback and Contact Form</title>
+        <link rel="stylesheet" href="CSS/Style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="divcontent">
+                <legend>FEEDBACK & CONTACT</legend>
+                <form id="namesinfull" name="NamesInFull" action="Feedback.html" method="cost" onsubmit="Validateform">
+                    <div id="divcontrols">
+                        <label for="namesinfull">Names In Full</label>
+                        <input type="text" class="text" id="names" name="names" placeholder="names" required oninvalid="setCustomValidity('Please enter the full names')" oninput="setCustomValidity('')" value="">
+
+                       <label for="email">Email</label>
+                       <input type="email" class="email" id="email" name="email" placeholder="email" required oninvalid="setCustomValidity('Please enter the Email')" oninput="setCustomValidity('')" value="">
+                       <label for="msg">Message</label>
+                       <input type="text" class="msg" id="msg" name="msg" placeholder="msg" required oninvalid="setCustomValidity('Please leave a message')" oninput="setCustomValidity('')" value="">
+                       </Input>
+                    </div>
+
+                    <div id="divcontrols">
+                        <label>Experience With Us</label>
+                        <label>Good
+                        <input type="radio" id="rbnexperiencewithus" name="rbnexperiencewithus">
+                        <label>Fair
+                        <input type="radio" id="rbnexperiencewithus" name="rbnexperiencewithus">
+                        <label>Bad
+                        <input type="radio" id="rbnexperiencewithus" name="rbnexperiencewithus">    
+                        </label>
+
+                        <input type="submit" value="Sendfeedback">
+                </form>
+                    </div>
+            <div class="contact">
+                <p>For more information please contact the following:</p>
+                <p>0800 855 127</p>
+                <p>360 3465</p>
+            </div>
+        </div>
+         
+    </body>
+</html>

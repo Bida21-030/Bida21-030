@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form</title>
+            <meta charset="utf-8">
+            <meta name="width=device-width,initial-scale=1.0">
+            <link rel="stylesheet" href="CSS/Style.css">
+    </head>
+    <style>
+      #divcontrols{
+        color: black;
+      }
+      input[type=text],input[type=password]{
+        background-color: burlywood;
+        height: 5vh;
+      }
+     
+    </style>
+    <body>
+        <div id="divlogin">
+                <legend>LOGIN</legend>
+                <form id="login" name="login" action="Login.html" method="cost" onsubmit="Validateform">
+                    <div id="divcontrols">
+                        <label for="loginid">Login ID</label>
+                        <input type="text" class="text" id="loginid" name="loginid" placeholder="login id" required oninvalid="setCustomValidity('Please enter the Login id')" oninput="setCustomValidity('')" value="">
+
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="password" required oninvalid="setCustomValidity('Please enter the Password')" oninput="setCustomValidity('')" value="">
+
+                        <input type="submit" value="login">
+                        <input type="submit" value="SignUp">
+                
+                    </div>
+                </form>
+            </fieldset>
+        </div> 
+    </body>
+</html>  
+   
